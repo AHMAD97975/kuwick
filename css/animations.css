@@ -1,0 +1,603 @@
+/* ==================== KUWICK ANIMATIONS & TRANSITIONS ==================== */
+
+/* ==================== KEYFRAMES ==================== */
+
+/* Float Animation - للعناصر العائمة */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Pulse Animation - للتأثيرات النابضة */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+/* Slide In Left - للنصوص القادمة من اليسار */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide In Right - للعناصر القادمة من اليمين */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide Up - للعناصر القادمة من الأسفل */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide Down - للعناصر القادمة من الأعلى */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Scale - لظهور العناصر مع التكبير */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Zoom In - للتكبير */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Bounce In - للارتداد */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Rotate In - للدوران أثناء الدخول */
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-200deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+/* Shake - للاهتزاز */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+/* Wave - للموجة */
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+}
+
+/* Glow - للتوهج */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 140, 0, 0.8);
+    }
+}
+
+/* Typing Effect - لتأثير الكتابة */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Blink - للرمش (للمؤشر) */
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Gradient Shift - لتحريك التدرجات */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Loading Spinner - للـ Loading */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Progress Bar - لشريط التقدم */
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* ==================== SCROLL ANIMATIONS ==================== */
+
+/* تطبيق حركات مختلفة للعناصر عند الظهور */
+.feature-card {
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+/* تأخير متدرج للبطاقات */
+.feature-card:nth-child(1) { animation-delay: 0.1s; }
+.feature-card:nth-child(2) { animation-delay: 0.2s; }
+.feature-card:nth-child(3) { animation-delay: 0.3s; }
+.feature-card:nth-child(4) { animation-delay: 0.4s; }
+.feature-card:nth-child(5) { animation-delay: 0.5s; }
+.feature-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* حركة للخطوات */
+.step:nth-child(odd) {
+    animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.step:nth-child(even) {
+    animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* حركة للشهادات */
+.testimonial-card {
+    opacity: 0;
+    animation: fadeInScale 0.8s ease-out forwards;
+}
+
+.testimonial-card:nth-child(1) { animation-delay: 0.2s; }
+.testimonial-card:nth-child(2) { animation-delay: 0.4s; }
+.testimonial-card:nth-child(3) { animation-delay: 0.6s; }
+
+/* ==================== HOVER EFFECTS ==================== */
+
+/* تأثيرات الـ Hover للبطاقات */
+.feature-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), rgba(0, 188, 212, 0.1));
+    opacity: 0;
+    border-radius: 12px;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.feature-card:hover::after {
+    opacity: 1;
+}
+
+/* تأثير التوهج عند الـ Hover */
+.btn-primary:hover {
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* تأثير الاهتزاز للأيقونات */
+.feature-icon:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* تأثير الموجة للشعار */
+.logo-icon:hover {
+    animation: wave 1s ease-in-out;
+}
+
+/* ==================== FLOATING ANIMATIONS ==================== */
+
+/* العناصر العائمة في الـ Hero */
+.floating-animation,
+.shape,
+.floating-element {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* تأخيرات مختلفة للعناصر العائمة */
+.shape-1 {
+    animation-duration: 6s;
+    animation-delay: 0s;
+}
+
+.shape-2 {
+    animation-duration: 8s;
+    animation-delay: -2s;
+    animation-direction: reverse;
+}
+
+.shape-3 {
+    animation: pulse 4s ease-in-out infinite;
+    animation-delay: -1s;
+}
+
+.delivery-truck {
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+.location-pin {
+    animation-duration: 4s;
+    animation-delay: -1s;
+    animation-direction: reverse;
+}
+
+.clock {
+    animation: pulse 3s ease-in-out infinite;
+    animation-delay: -0.5s;
+}
+
+/* ==================== LOADING ANIMATIONS ==================== */
+
+/* تأثير الظهور التدريجي للصفحة */
+.page-enter {
+    animation: fadeInScale 0.8s ease-out;
+}
+
+/* تأثير الاختفاء */
+.page-exit {
+    animation: fadeInScale 0.4s ease-in reverse;
+}
+
+/* ==================== GRADIENT EFFECTS ==================== */
+
+.gradient-text {
+    background: linear-gradient(135deg, #FF8C00, #00BCD4, #FF8C00);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 3s ease-in-out infinite;
+}
+
+/* خلفية متحركة للعناصر */
+.animated-background {
+    background: linear-gradient(45deg, #FF8C00, #00BCD4, #1B3A56, #FF8C00);
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+}
+
+/* ==================== INTERACTIVE ANIMATIONS ==================== */
+
+/* تأثير النقر */
+.click-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.click-effect::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.click-effect:active::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* تأثير التركيز */
+.focus-effect:focus {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+/* ==================== SCROLL INDICATORS ==================== */
+
+/* مؤشر التقدم في الصفحة */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(90deg, #FF8C00, #00BCD4);
+    z-index: 9999;
+    transition: width 0.1s ease;
+}
+
+/* ==================== MOBILE ANIMATIONS ==================== */
+
+/* حركات محسنة للهاتف المحمول */
+@media (max-width: 768px) {
+    /* تقليل مدة الحركات للهواتف */
+    .feature-card,
+    .testimonial-card,
+    .step {
+        animation-duration: 0.4s;
+    }
+    
+    /* إزالة بعض الحركات الثقيلة */
+    .floating-animation,
+    .shape {
+        animation: none;
+    }
+    
+    /* حركات مبسطة للهواتف */
+    .hero-content {
+        animation: fadeInScale 0.6s ease-out;
+    }
+    
+    .hero-image {
+        animation: slideUp 0.6s ease-out;
+    }
+}
+
+/* ==================== ACCESSIBILITY ==================== */
+
+/* احترام إعدادات تقليل الحركة */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    /* الحفاظ على الحركات الأساسية فقط */
+    .scroll-progress {
+        transition: width 0.1s ease;
+    }
+}
+
+/* ==================== PERFORMANCE OPTIMIZATIONS ==================== */
+
+/* تحسين الأداء للحركات */
+.feature-card,
+.testimonial-card,
+.step,
+.hero-content,
+.hero-image {
+    will-change: transform, opacity;
+}
+
+/* إزالة will-change بعد انتهاء الحركة */
+.animation-complete {
+    will-change: auto;
+}
+
+/* ==================== CUSTOM TIMING FUNCTIONS ==================== */
+
+:root {
+    /* منحنيات حركة مخصصة */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-out-circ: cubic-bezier(0.08, 0.82, 0.17, 1);
+    --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+    --ease-in-out-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* استخدام المنحنيات المخصصة */
+.smooth-animation {
+    transition: all 0.6s var(--ease-out-expo);
+}
+
+.bouncy-animation {
+    transition: all 0.4s var(--ease-in-out-back);
+}
+
+/* ==================== STAGGERED ANIMATIONS ==================== */
+
+/* حركات متدرجة للقوائم */
+.stagger-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+.stagger-item:nth-child(1) { animation-delay: 0.1s; }
+.stagger-item:nth-child(2) { animation-delay: 0.2s; }
+.stagger-item:nth-child(3) { animation-delay: 0.3s; }
+.stagger-item:nth-child(4) { animation-delay: 0.4s; }
+.stagger-item:nth-child(5) { animation-delay: 0.5s; }
+.stagger-item:nth-child(6) { animation-delay: 0.6s; }
+.stagger-item:nth-child(7) { animation-delay: 0.7s; }
+.stagger-item:nth-child(8) { animation-delay: 0.8s; }
+
+/* ==================== REVEAL ANIMATIONS ==================== */
+
+/* إظهار العناصر عند الوصول إليها */
+.reveal-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s var(--ease-out-expo);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s var(--ease-out-expo);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s var(--ease-out-expo);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s var(--ease-out-expo);
+}
+
+/* حالة الإظهار */
+.revealed {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+/* ==================== SPECIAL EFFECTS ==================== */
+
+/* تأثير الجسيمات */
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 140, 0, 0.7);
+    border-radius: 50%;
+    animation: particle-float 10s linear infinite;
+}
+
+@keyframes particle-float {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-10vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ==================== TEXT ANIMATIONS ==================== */
+
+/* تأثير الكتابة للنصوص */
+.typewriter {
+    overflow: hidden;
+    border-left: 2px solid #FF8C00;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+}
+
+/* تأثير الإضاءة للنصوص */
+.text-glow {
+    text-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* تأثير التموج للنصوص */
+.text-wave span {
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.text-wave span:nth-child(1) { animation-delay: 0s; }
+.text-wave span:nth-child(2) { animation-delay: 0.1s; }
+.text-wave span:nth-child(3) { animation-delay: 0.2s; }
+.text-wave span:nth-child(4) { animation-delay: 0.3s; }
+.text-wave span:nth-child(5) { animation-delay: 0.4s; }

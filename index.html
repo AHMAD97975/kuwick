@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuwick - سيارتك للتوصيل السريع في الكويت</title>
+    <meta name="description"
+        content="خدمة توصيل سريعة وآمنة في جميع أنحاء الكويت. احصل على طلباتك في أقل من ساعة مع Kuwick">
+    <meta name="keywords" content="توصيل, الكويت, سريع, آمن, تطبيق توصيل, Kuwick">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts (Professional Kuwick Typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- LOADING SCREEN -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="logo-loading">
+                <img src="images/logo.png" alt="Kuwick Logo" class="loading-logo-image">
+                <div class="loading-text">جاري التحميل...</div>
+                <div class="demo-notice">هذا الموقع تجريبي</div>
+            </div>
+            <div class="loading-spinner">
+                <div class="spinner-circle"></div>
+                <div class="spinner-pulse"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVBAR -->
+    <header id="header">
+        <div class="navbar-container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Kuwick Logo" class="logo-image">
+                <span class="logo-text">Kuwick</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#features" class="nav-link">الميزات</a></li>
+                    <li><a href="#how-it-works" class="nav-link">كيف يعمل</a></li>
+                    <li><a href="#testimonials" class="nav-link">التقييمات</a></li>
+                    <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#download" class="cta-button">تحميل التطبيق</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-bolt"></i>
+                        <span>الأسرع في الكويت</span>
+                    </div>
+                    <h1 class="hero-title">
+                        توصيل سريع وآمن
+                        <span class="gradient-text">في جميع أنحاء الكويت</span>
+                    </h1>
+                    <p class="hero-description">
+                        اطلب الآن واستقبل طلبك في أقل من ساعة. سائقون موثوقون، خدمة عالية الجودة، أسعار عادلة.
+                        انضم لآلاف العملاء الراضين عن خدماتنا.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">100K+</span>
+                            <span class="stat-text">توصيل ناجح</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-text">رضا العملاء</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary">
+                            <i class="fas fa-download"></i>
+                            <span>تحميل الآن</span>
+                        </a>
+                        <a href="#how-it-works" class="btn btn-secondary">
+                            <i class="fas fa-play-circle"></i>
+                            <span>شاهد كيف يعمل</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-visual">
+                        <div class="hero-image-container">
+                            <img src="images/hero.jpg" alt="خدمة التوصيل السريع مع Kuwick" class="hero-main-img">
+                            <div class="floating-elements">
+                                <div class="floating-element delivery-truck">
+                                    <i class="fas fa-truck"></i>
+                                    <span>توصيل سريع</span>
+                                </div>
+                                <div class="floating-element location-pin">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>تتبع مباشر</span>
+                                </div>
+                                <div class="floating-element clock">
+                                    <i class="fas fa-clock"></i>
+                                    <span>24/7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <!-- FEATURES SECTION -->
+        <section class="features content-card" id="features">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-star"></i>
+                    <span>مميزاتنا</span>
+                </div>
+                <h2 class="section-title">لماذا تختار Kuwick؟</h2>
+                <p class="section-description">نقدم أفضل خدمة توصيل في الكويت بمميزات استثنائية</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">سرعة فائقة</h3>
+                    <p class="feature-description">توصيل سريع بأقل من ساعة مع تحديثات لحظية لموقع طلبك</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3 class="feature-title">أسعار عادلة</h3>
+                    <p class="feature-description">أسعار شفافة وعادلة بدون رسوم مخفية أو مفاجآت</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">أمان البيانات</h3>
+                    <p class="feature-description">حماية كاملة لبياناتك الشخصية والمالية مع أعلى معايير الأمان</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="feature-title">نقاط المكافآت</h3>
+                    <p class="feature-description">احصل على نقاط مع كل عملية توصيل وحولها لخصومات وعروض حصرية</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">تطبيق سهل</h3>
+                    <p class="feature-description">واجهة بسيطة وسهلة الاستخدام مع تجربة مستخدم ممتازة</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">دعم 24/7</h3>
+                    <p class="feature-description">فريق دعم فني جاهز لخدمتك طوال الوقت عبر جميع قنوات التواصل</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- SERVICE SHOWCASE SECTION -->
+        <section class="service-showcase content-card" id="showcase">
+            <div class="showcase-container">
+                <div class="showcase-content" data-aos="fade-right">
+                    <h2 class="showcase-title">تجربة توصيل لا مثيل لها</h2>
+                    <p class="showcase-description">نحن نفخر بتقديم خدمة توصيل احترافية تضمن وصول طلباتك في الوقت المحدد
+                        وبأعلى مستوى من الجودة والأمان.</p>
+                    <ul class="showcase-features">
+                        <li><i class="fas fa-check"></i> توصيل خلال 30 دقيقة</li>
+                        <li><i class="fas fa-check"></i> تتبع مباشر للطلبات</li>
+                        <li><i class="fas fa-check"></i> دفع آمن ومرن</li>
+                        <li><i class="fas fa-check"></i> خدمة عملاء متميزة</li>
+                    </ul>
+                </div>
+                <div class="showcase-image" data-aos="fade-left">
+                    <img src="images/hero.jpg" alt="خدمة التوصيل المتميزة" class="showcase-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS SECTION -->
+        <section class="stats content-card">
+            <div class="stats-container">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="100000">0</h3>
+                    <p class="stat-text">عملية توصيل ناجحة</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="50000">0</h3>
+                    <p class="stat-text">عميل راضي</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="1000">0</h3>
+                    <p class="stat-text">سائق موثوق</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="99.9">0</h3>
+                    <p class="stat-text">معدل الرضا %</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS SECTION -->
+        <section class="how-it-works content-card" id="how-it-works">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-cogs"></i>
+                    <span>كيف يعمل</span>
+                </div>
+                <h2 class="section-title">كيف يعمل Kuwick؟</h2>
+                <p class="section-description">4 خطوات بسيطة للحصول على طلبك</p>
+            </div>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3 class="step-title">حمل التطبيق</h3>
+                        <p class="step-description">حمل تطبيق Kuwick من متجر التطبيقات وأنشئ حسابك بسهولة</p>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-left" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="step-title">اختر طلبك</h3>
+                        <p class="step-description">اختر المنتجات التي تريدها من المتاجر المتاحة في منطقتك</p>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3 class="step-title">أكمل الدفع</h3>
+                        <p class="step-description">ادفع بأمان عبر طرق دفع متعددة ومضمونة</p>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-left" data-aos-delay="400">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3 class="step-title">استقبل طلبك</h3>
+                        <p class="step-description">تتبع سائقك واستقبل طلبك في الوقت المحدد</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="testimonials content-card" id="testimonials">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-comments"></i>
+                    <span>آراء العملاء</span>
+                </div>
+                <h2 class="section-title">ما يقوله عملاؤنا</h2>
+                <p class="section-description">تجارب حقيقية من عملائنا المميزين</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-header">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-rating">5.0</div>
+                    </div>
+                    <p class="testimonial-text">
+                        "خدمة رائعة جداً! التطبيق سهل والسائق احترافي. وصل طلبي في الوقت المحدد تماماً. سأستخدم الخدمة
+                        دائماً!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://i.pravatar.cc/150?img=1" alt="أحمد العتيبي">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">أحمد العتيبي</h4>
+                            <p class="author-title">رجل أعمال</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-header">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-rating">5.0</div>
+                    </div>
+                    <p class="testimonial-text">
+                        "أفضل تطبيق توصيل استخدمته! السرعة والأمان والسعر كل شيء مثالي. أنصح به بشدة!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://i.pravatar.cc/150?img=9" alt="فاطمة محمد">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">فاطمة محمد</h4>
+                            <p class="author-title">أم وربة منزل</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-header">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-rating">5.0</div>
+                    </div>
+                    <p class="testimonial-text">
+                        "التطبيق موثوق جداً والدعم الفني ممتاز. حل جميع مشاكلي بسرعة. أنصح به جميع أصدقائي."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://i.pravatar.cc/150?img=3" alt="محمد العازمي">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">محمد العازمي</h4>
+                            <p class="author-title">مهندس</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- DOWNLOAD SECTION -->
+        <section class="download content-card" id="download">
+            <div class="download-container">
+                <div class="download-content" data-aos="fade-up">
+                    <h2 class="download-title">ابدأ التوصيل الآن!</h2>
+                    <p class="download-description">
+                        حمل تطبيق Kuwick وابدأ باستقبال طلباتك في أقل من ساعة.
+                        متوفر على جميع الأجهزة
+                    </p>
+                    <div class="app-buttons" id="download1">
+                        <a href="https://ahmad97975.github.io" class="app-button" data-aos="zoom-in"
+                            data-aos-delay="100">
+                            <div class="app-icon">
+                                <i class="fab fa-google-play"></i>
+                            </div>
+                            <div class="app-info">
+                                <span class="app-text">متوفر على</span>
+                                <span class="app-name">GitHub Pages</span>
+                            </div>
+                        </a>
+                        <a href="https://ahmad97975.github.io" class="app-button" data-aos="zoom-in"
+                            data-aos-delay="200">
+                            <div class="app-icon">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <div class="app-info">
+                                <span class="app-text">زيارة موقعي</span>
+                                <span class="app-name">Ahmad's Portfolio</span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="download-visual" data-aos="fade-left">
+                    <div class="phones-mockup">
+                        <img src="images/logo.png" alt="Kuwick Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact content-card" id="contact">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-envelope"></i>
+                    <span>تواصل معنا</span>
+                </div>
+                <h2 class="section-title">نحن هنا لخدمتك</h2>
+                <p class="section-description">تواصل معنا في أي وقت، نحن جاهزون للإجابة على استفساراتك</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>اتصل بنا</h3>
+                            <p>+963939369305</p>
+                            <p>+96550456410</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>راسلنا</h3>
+                            <p>info@kuwick.com</p>
+                            <p>support@kuwick.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>زورنا</h3>
+                            <p>مدينة الكويت، الشرق</p>
+                            <p>برج التجارة، الطابق 15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="الاسم الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="رقم الهاتف">
+                        </div>
+                        <div class="form-group">
+                            <select name="subject" required>
+                                <option value="">اختر الموضوع</option>
+                                <option value="general">استفسار عام</option>
+                                <option value="technical">مشكلة تقنية</option>
+                                <option value="partnership">شراكة</option>
+                                <option value="complaint">شكوى</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="رسالتك" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>إرسال الرسالة</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <section class="content-card" id="footer">
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                            <div class="footer-brand">
+                                <div class="footer-logo">
+                                    <img src="images/logo.png" alt="Kuwick Logo" class="footer-logo-image">
+                                    <span class="logo-text">Kuwick</span>
+                                </div>
+                                <p class="footer-description">
+                                    خدمة التوصيل الأسرع والأكثر أماناً في الكويت. نهدف لتقديم تجربة توصيل استثنائية
+                                    لجميع عملائنا.
+                                </p>
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/share/1AaZccH2Nj/?mibextid=wwXIfr"
+                                        class="social-link">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="https://x.com/a_90_95?s=11" class="social-link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/ahmad_el_mohammad?igsh=a21pdXRnbWF5eTMy&utm_source=qr"
+                                        class="social-link">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://ahmad97975.github.io" class="social-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="footer-title">عن Kuwick</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">من نحن</a></li>
+                                <li><a href="#">الرؤية والرسالة</a></li>
+                                <li><a href="#">الوظائف</a></li>
+                                <li><a href="#">الشركاء</a></li>
+                                <li><a href="#">المدونة</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+                            <h4 class="footer-title">الخدمات</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">توصيل الطعام</a></li>
+                                <li><a href="#">توصيل المشتريات</a></li>
+                                <li><a href="#">توصيل الوثائق</a></li>
+                                <li><a href="#">توصيل المنتجات</a></li>
+                                <li><a href="#">خدمات الشركات</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
+                            <h4 class="footer-title">المساعدة</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">الأسئلة الشائعة</a></li>
+                                <li><a href="#">اتصل بنا</a></li>
+                                <li><a href="#">شروط الخدمة</a></li>
+                                <li><a href="#">سياسة الخصوصية</a></li>
+                                <li><a href="#">مركز المساعدة</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="footer-bottom-content">
+                            <p class="copyright">
+                                &copy; 2025 Kuwick. جميع الحقوق محفوظة.
+                            </p>
+                            <div class="footer-bottom-links">
+                                <a href="#">الشروط والأحكام</a>
+                                <a href="#">سياسة الخصوصية</a>
+                                <a href="#">ملفات تعريف الارتباط</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        </div> <!-- End main-content -->
+
+        <!-- BACK TO TOP BUTTON -->
+        <button id="back-to-top" class="back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+
+        <!-- JavaScript Files -->
+        <script src="js/main.js"></script>
+        <script src="js/interactions.js"></script>
+
+        <!-- AOS Animation Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+        </script>
+</body>
+
+</html>
